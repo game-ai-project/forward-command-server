@@ -24,6 +24,4 @@ def job():
 schedule.every(30).seconds.do(job)
 
 while 1:
-    job()
     schedule.run_pending()
-    time.sleep(29)
